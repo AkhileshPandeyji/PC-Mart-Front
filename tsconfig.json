@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es5",
+        "noImplicitAny": true,
+        "jsx":"react",
+        "watch": true,
+        "sourceMap": true
+    },
+    "include":["./src/**/*","index.d.ts"]
+}

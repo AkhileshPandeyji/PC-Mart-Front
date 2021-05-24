@@ -1,0 +1,31 @@
+@import "../../../variables";
+.UserProfileHeader {
+	display: flex;
+	width: "30%";
+	height: "100%";
+	align-items: center;
+	margin: 0.2rem 0;
+	color: $primary-font-color;
+	&-Image {
+		height: fit-content;
+		img {
+			margin-top: 0.2em;
+			width: 3em;
+			height: 3em;
+		}
+	}
+	&-Text {
+		p {
+			margin: 0.2em 0.6rem;
+			font-weight: 400;
+		}
+	}
+	&-Cart {
+		display: flex;
+		align-items: center;
+		margin-left: 2rem;
+		h3 {
+			margin: 0.2em 0.6rem;
+		}
+	}
+}
