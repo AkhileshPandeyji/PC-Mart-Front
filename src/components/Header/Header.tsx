@@ -19,10 +19,8 @@ const Header: FC<HeaderProps> = (props: HeaderProps) => {
 				title="PC Mart"
 				tagLine="Better Price Better Quality"
 			/>
-			{window.innerWidth > 720 ? <Navbar links={links} /> : null}
-			{window.innerWidth > 720 ? (
-				<SearchBar placeholder="Search Items" />
-			) : null}
+			{window.innerWidth >= 768 ? <Navbar links={links} /> : null}
+			{window.innerWidth >= 768 ? <SearchBar placeholder="Search" /> : null}
 
 			<UserProfileHeader imgSrc={ProfilePic} name={"Akhilesh Kumar Pandey"} />
 		</div>

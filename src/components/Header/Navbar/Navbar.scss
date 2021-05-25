@@ -1,7 +1,21 @@
+@import "../../../variables";
+
 .Navbar {
 	display: flex;
 	align-items: center;
 	width: 30%;
 	height: 90%;
+	margin: auto;
 	text-align: center;
+}
+
+@media screen and (min-width: $breakpoint4) and (max-width: $breakpoint3 - 1) {
+	.Navbar {
+		margin-left: 4px;
+	}
+}
+@media screen and (max-width: $breakpoint4 - 1) {
+	.Navbar {
+		display: none;
+	}
 }

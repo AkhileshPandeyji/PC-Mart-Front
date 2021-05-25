@@ -26,19 +26,19 @@ const Logo: FC<LogoProps> = (props: LogoProps) => {
 			</div>
 
 			<div className="Logo-Text">
-				{window.innerWidth < 720 ? (
+				{window.innerWidth < 768 ? (
 					<button>
 						<FontAwesomeIcon icon={faBars} size="2x" color="white" />
 					</button>
 				) : (
-					<>
+					<div className="Logo-Text-Optional">
 						<div>
 							<h3>{props.title}</h3>
 						</div>
 						<div>
 							<p>{props.tagLine ? props.tagLine : null}</p>
 						</div>
-					</>
+					</div>
 				)}
 			</div>
 		</div>

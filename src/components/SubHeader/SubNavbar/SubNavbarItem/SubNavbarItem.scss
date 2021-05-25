@@ -1,0 +1,16 @@
+.SubNavbarItem {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 12rem;
+	height: 100%;
+	cursor: pointer;
+	&:hover {
+		background: #555454;
+	}
+	h4 {
+		font-weight: 300;
+		color: #fff;
+		margin: auto 0.4em;
+	}
+}

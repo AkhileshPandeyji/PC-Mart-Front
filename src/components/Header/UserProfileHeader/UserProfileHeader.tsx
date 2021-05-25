@@ -18,7 +18,7 @@ const UserProfileHeader: FC<UserProfileHeaderProps> = (
 			<div className="UserProfileHeader-Image">
 				<img src={props.imgSrc} alt="profile-picture" />
 			</div>
-			{window.innerWidth > 720 ? (
+			{window.innerWidth > 768 ? (
 				<div className="UserProfileHeader-Text">
 					<p>{props.name ? props.name : "Guest"}</p>
 				</div>

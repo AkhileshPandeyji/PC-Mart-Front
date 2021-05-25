@@ -1,8 +1,7 @@
 @import "../../../variables";
 
 .Logo {
-	width: "30%";
-	height: "100%";
+	width: fit-content;
 	display: flex;
 	align-items: center;
 	margin: 0.2rem 0;
@@ -15,7 +14,7 @@
 	}
 	&-Text {
 		margin: 0 0.4em;
-		color:$primary-font-color;
+		color: $primary-font-color;
 		h3 {
 			line-height: 1rem;
 			font-size: 1rem;
@@ -23,23 +22,56 @@
 			font-weight: bold;
 		}
 		p {
+			font-size: 0.8rem;
 			margin: 0.2em 0;
 			font-weight: 400;
 		}
 		button {
-			width: 100%;
-			height: 100%;
-			background: none;
-			border: $primary-border;
-			padding: 0.4rem;
+			display: none;
 		}
 	}
 }
 
-// @media (max-width: 720px) {
-// 	.Logo {
-// 		&-Text {
-// 			display: none;
-// 		}
-// 	}
-// }
+@media screen and (min-width: $breakpoint3) and(max-width: $breakpoint2 - 1) {
+	.Logo {
+		&-Text {
+			h3 {
+				font-size: 0.8rem;
+				line-height: 0.8rem;
+			}
+			p {
+				font-size: 0.6rem;
+			}
+		}
+	}
+}
+@media screen and (min-width: $breakpoint4) and(max-width: $breakpoint3 - 1) {
+	.Logo {
+		&-Text {
+			h3 {
+				font-size: 0.7rem;
+				line-height: 0.7rem;
+			}
+			p {
+				font-size: 0.5rem;
+			}
+		}
+	}
+}
+@media screen and (max-width: $breakpoint4 - 1) {
+	.Logo {
+		&-Text {
+			button {
+				display: block;
+				width: 100%;
+				height: 100%;
+				background: none;
+				border: $primary-border;
+				padding: 0.4rem;
+			}
+			&-Optional {
+				display: none;
+			}
+		}
+	}
+}

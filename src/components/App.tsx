@@ -2,6 +2,7 @@ import * as React from "react";
 import { useAppSelector, useAppDispatch } from "../hooks";
 import { authStart } from "../redux/modules/authDetails";
 import Header from "./Header/Header";
+import SubHeader from "./SubHeader/SubHeader";
 
 const App = () => {
 	const dispatch = useAppDispatch();
@@ -14,6 +15,7 @@ const App = () => {
 	return (
 		<div className="App">
 			<Header />
+			{window.innerWidth > 768 ? <SubHeader /> : null}
 			{
 				<div
 					style={{
@@ -21,7 +23,8 @@ const App = () => {
 						height: "100%",
 						background: "#dfdfdf",
 						fontSize: "24px",
-						margin: "0.4rem",
+						padding: "0.4rem",
+						marginTop: "0.4rem",
 					}}
 				>
 					Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero,

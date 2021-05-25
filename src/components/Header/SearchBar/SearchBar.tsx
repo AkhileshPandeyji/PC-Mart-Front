@@ -16,7 +16,7 @@ const SearchBar: FC<SearchBarProps> = (props: SearchBarProps) => {
 	};
 	return (
 		<div className="SearchBar">
-			<h3>Search</h3>
+			{window.innerWidth >= 1106 ? <h3>Search</h3> : null}
 			<input
 				type="text"
 				value={searchText}

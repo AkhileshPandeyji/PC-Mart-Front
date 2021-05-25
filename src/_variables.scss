@@ -1,8 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap");
 
 $primary-header-back: #333;
+$primary-subheader-back: #424141;
 $theme-color: #ffa000;
 $hr-color: #bfbfbf;
 $primary-font-family: "Roboto Condensed", sans-serif;
 $primary-font-color: #fff;
 $primary-border: 1px solid #dedbdb;
+
+$breakpoint1: 1301px;
+$breakpoint2: 1106px;
+$breakpoint3: 972px;
+$breakpoint4: 768px;
