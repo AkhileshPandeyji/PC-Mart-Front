@@ -1,4 +1,5 @@
 import * as React from "react";
+import { NavLink } from "react-router-dom";
 import { FC } from "react";
 import "./Navbar.scss";
 import NavbarItem from "./NavbarItem/NavbarItem";
@@ -17,12 +18,14 @@ const Navbar: FC<NavbarProps> = (props: NavbarProps) => {
 		<div className="Navbar">
 			{props.links.map((link, idx) => {
 				return (
-					<NavbarItem
-						title={link.title}
-						icon={link.icon ? link.icon : null}
-						key={idx}
-					/>
-				);
+          <NavLink to={link.url} activeStyle={{}}>
+            <NavbarItem
+              title={link.title}
+              icon={link.icon ? link.icon : null}
+              key={idx}
+            />
+          </NavLink>
+        );
 			})}
 		</div>
 	);

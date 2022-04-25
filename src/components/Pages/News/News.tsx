@@ -1,6 +1,6 @@
 import * as React from "react";
 import { FC } from "react";
-import "./Contact.scss";
+import "./News.scss";
 
 interface NewsProps {}
 

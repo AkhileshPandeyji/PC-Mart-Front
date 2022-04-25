@@ -23,25 +23,25 @@ const routes: Array<{
 }> = [
 	{
 		path: "/",
-		component: null,
+		component: Home,
 		exact: true,
 		serverFetch: null,
 	},
 	{
 		path: "/contact",
-		component: null,
+		component: Contact,
 		exact: true,
 		serverFetch: null,
 	},
 	{
 		path: "/about",
-		component: null,
+		component: About,
 		exact: true,
 		serverFetch: null,
 	},
 	{
 		path: "/news",
-		component: null,
+		component: News,
 		exact: true,
 		serverFetch: null,
 	},

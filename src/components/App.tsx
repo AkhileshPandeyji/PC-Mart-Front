@@ -17,7 +17,7 @@ const App = () => {
 	return (
 		<div className="App">
 			<Header />
-			{window.innerWidth > 768 ? <SubHeader /> : null}
+			{window && window.innerWidth > 768 ? <SubHeader /> : null}
 			{routes.map((route, idx) => {
 				return <Route {...route} />;
 			})}
